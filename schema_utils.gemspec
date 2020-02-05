@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Ricardo Pontes"]
   spec.email         = ["ricardo@bonitourtecnologia.com"]
 
-  spec.summary       = "Write a short summary, because RubyGems requires one."
-  spec.description   = "Write a longer description or delete this line."
+  spec.summary       = "Run migration on schema"
+  spec.description   = "Gem to set a schema to run migration."
   spec.homepage      = "https://github.com/bonitour/schema_utils"
   spec.license       = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")
