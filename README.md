@@ -10,13 +10,29 @@ gem 'schema_utils'
 
 And then execute:
 
-    $ bundle install
-
-Or install it yourself as:
-
-    $ gem install schema-utils
+```bash
+$ bundle install
+```
 
 ## Usage
+
+Inicializar a lib:
+
+```ruby
+# ../config/initializers/schema_utils.rb
+
+require "schema_utils"
+#
+# SchemaUtils Configuration
+#
+SchemaUtils.configure do |config|
+  # There are cases where you might want some schemas to always be in your search_path
+  # e.g when using a PostgreSQL extension like pgcrypto.
+  # Any schemas added here will be available along with your selected Schema.
+  #
+  config.persistent_schemas = %w[shared_extensions]
+end
+```
 
 Dentro da migration incluir:
 
